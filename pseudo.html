@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <title>Document</title>
+  <style>
+    blockquote::before{
+      content: open-quote;
+      color: magenta;
+      font-size: 1.5em;
+    }
+    blockquote::after{
+      content: close-quote;
+      color: magenta;
+      font-size: 1.5em;
+    }
+    .section-titel{
+      display: inline-block;
+    }
+    .section-titel::before, 
+    .section-titel:hover::after 
+    {
+      content: '';
+      display: block;
+      background-color: magenta;
+      height: 2px;
+      width: 100%;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container mt-3">
+    <section>
+      <h2 class="section-titel">Best Quotes</h2>
+      <blockquote>Patience, persistence and perspirration make an unbeatable combination for success</blockquote>
+      <blockquote>According to Martin Lindstrom, there are three steps to creating a powerful personal brand ― Attention, Bridging, and
+      Re-Invention.</blockquote>
+      <blockquote>Avoid kicking up controversies to elevate your brand because it boomerangs. Controversies are like steroids that ruin
+      your brand in the long run. Your brand must not be like a flash in the pan. Instead, your brand must reflect your
+      content, character, and commitment. You must live by it by standing on your principles and philosophies irrespective of
+      pulls and pressures.</blockquote>
+    </section>
+  </div>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
